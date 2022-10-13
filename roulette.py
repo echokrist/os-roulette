@@ -8,11 +8,11 @@ def main() -> None:
         return exit()
 
     print("Loading chamber...")
-    print("Pointing gun at your Operating System!")
     chamber_roll:int = random.randint(0,5);
     system_platform:str = platform.system().lower()
     os_gun_fired_dialog:str = "Your Operating System got hit! Say goodbye..."
-
+        
+    print("Pointing gun at your Operating System!")
     print("Gun FIRES!")
     if chamber_roll == 3 :
         if system_platform == "linux" or system_platform == "linux2":
